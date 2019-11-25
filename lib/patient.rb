@@ -18,6 +18,6 @@ class Patient
     appointments.collect {|app| app.doctor}
   end
   def new_appointment(doctor, date)
-    Appointment.new(date, self, doctor)
+    Appointment.new(self, date, doctor)
   end
 end
